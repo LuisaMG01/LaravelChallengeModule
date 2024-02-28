@@ -1,0 +1,56 @@
+/* Background color for secondary elements */
+.bg-secondary {
+    background-color: #800080 !important;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #6d026d;
+}
+
+/* Button styles for forms */
+.button_form {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button hover effect for forms */
+.button_form:hover {
+    background-color: #6d026d;
+}
+
+/* Carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(30%);
+}
+
+/* Card header styles */
+.card-header {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c8a70d92332465.5e490718ed693.gif");
+    color: white;
+    /* Apply text shadow */
+    text-shadow: 0 0 5px #6d026d, 0 0 5px #6d026d, 0 0 5px #6d026d,
+        0 0 5px #6d026d;
+}

@@ -1,0 +1,11 @@
+# Project Installation
+
+To install and set up the project, please follow the steps below:
+
+1. Go to the the repository from [GitHub](https://github.com/LuisaMG01/LaravelChallengeModule/tree/main).
+2. Go to the README file on the project.
+3. Follow the steps to run the project.
+
+Once the above steps are completed, you should be able to access the project in your browser at `http://localhost:8000`.
+
+For more detailed instructions and troubleshooting, please refer to the [README](https://github.com/LuisaMG01/LaravelChallengeModule/blob/main/README.md) file in the project repository.
