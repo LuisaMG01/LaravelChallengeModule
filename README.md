@@ -90,8 +90,8 @@ After making these changes, the `mysqli` extension should be enabled and the iss
 
 Finally you can run the program using Artisan's serve command to start a development server. Run the following command:
 
-    ```bash
+    
     php artisan serve
-    ```
+    
 
 This will start a development server at http://localhost:8000, allowing you to access the application in your web browser.
