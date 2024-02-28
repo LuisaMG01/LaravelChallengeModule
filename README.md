@@ -62,9 +62,40 @@ To correct the issue, follow these steps:
 
 After making these changes, the `mysqli` extension should be enabled and the issue should be resolved.
 
+## Create the .env file
+
+1. Create a .env file: Duplicate the .env.example file in the project root directory and rename it to .env. This file will contain your environment-specific settings such as database configurations, application key, and other sensitive information.
+
+```
+cp .env.example .env
+```
+
+2. Configure the .env file: Open the .env file in a text editor and update the variables according to your local environment settings. Ensure to set the database connection details, application key, and any other necessary configurations.
+
+3. Generate Application Key: Run the following command to generate a unique application key:
+
+```
+php artisan key:generate
+```
+
+This key is used for encryption and should be kept secret.
+
 ## How to use the models
 
+Into phpMyAdmin create a new database called challenge.
+
 1. **Database Configuration**: Open the project in your preferred code editor. Navigate to the `.env` file in the root directory of the project. Update the database configuration parameters such as `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` according to your local database settings.
+
+Remember to change the .env configuration:
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=challenge
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 2. **Migrate the Database**: Run the following command in your terminal to migrate the database schema to your local database:
 
@@ -90,8 +121,6 @@ After making these changes, the `mysqli` extension should be enabled and the iss
 
 Finally you can run the program using Artisan's serve command to start a development server. Run the following command:
 
-    ```bash
     php artisan serve
-    ```
 
 This will start a development server at http://localhost:8000, allowing you to access the application in your web browser.
