@@ -1,4 +1,4 @@
-# Project Name
+# Challenge Module Zone
 
 ## Description
 
@@ -61,3 +61,37 @@ To correct the issue, follow these steps:
 6. Restart the Apache server from the XAMPP Control Panel.
 
 After making these changes, the `mysqli` extension should be enabled and the issue should be resolved.
+
+## How to use the models
+
+1. **Database Configuration**: Open the project in your preferred code editor. Navigate to the `.env` file in the root directory of the project. Update the database configuration parameters such as `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` according to your local database settings.
+
+2. **Migrate the Database**: Run the following command in your terminal to migrate the database schema to your local database:
+
+   ```bash
+   php artisan migrate
+   ```
+
+   This command will create the necessary tables in your local database based on the migrations defined in the project.
+
+3. **Seed the Database (Optional)**: If the project includes seeders to populate the database with initial data, you can run the following command to execute the seeders:
+
+   ```bash
+   php artisan db:seed
+   ```
+
+   This will populate the database with sample data defined in the seeders.
+
+4. **Using the Model**: Now that the database is set up, you can use the model within your project to interact with the database. In your controllers or other parts of the application, import the model class and use its methods to perform CRUD (Create, Read, Update, Delete) operations on the database.
+
+5. **Accessing phpMyAdmin**: To access phpMyAdmin and view the database tables, open your web browser and enter the URL to phpMyAdmin. This URL is typically `http://localhost/phpmyadmin`. Log in with the username and password set during your XAMPP or database installation.
+
+## How to run the program
+
+Finally you can run the program using Artisan's serve command to start a development server. Run the following command:
+
+    ```bash
+    php artisan serve
+    ```
+
+This will start a development server at http://localhost:8000, allowing you to access the application in your web browser.
